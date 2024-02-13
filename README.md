@@ -1,5 +1,6 @@
-You need to preinstall # react-icons, jquery, swiper and run fastapi server
-#Fastapi
+You need to preinstall 
+# react-icons, jquery, swiper and run fastapi server
+# Fastapi
 go to https://fastapi.tiangolo.com/ for documentation
 
 # Getting Started with Create React App
