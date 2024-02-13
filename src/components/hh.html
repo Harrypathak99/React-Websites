@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Horizontal Card</title>
+  <style>
+    /* Reset some default styles */
+    body, h1, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .horizontal-card {
+      display: flex;
+      max-width: 600px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card-image {
+      flex: 1;
+      overflow: hidden;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-content {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .card-content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .card-content button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .card-content button:hover {
+      background-color: #45a049;
+    }
+
+    .horizontal-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="horizontal-card">
+    <div class="card-image">
+      <img src="https://via.placeholder.com/300x200" alt="Card Image">
+    </div>
+    <div class="card-content">
+      <h2>Title</h2>
+      <p>Description goes here. Add some more details about the content of the card.</p>
+      <button>Learn More</button>
+    </div>
+  </div>
+</body>
+</html>
